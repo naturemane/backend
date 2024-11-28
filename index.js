@@ -35,7 +35,7 @@ app.get('/ping', (req, res) => {
 
 const keepAlive = () => {
     setInterval(() => {
-      fetch('https://e-com-backend-jzja.onrender.com/ping') 
+      fetch('https://naturemaneback.onrender.com/ping') 
         .then(res => res.text())
         .then(text => console.log(`Ping response: ${text}`))
         .catch(err => console.log('Error pinging the server:', err));
